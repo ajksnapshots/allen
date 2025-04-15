@@ -200,53 +200,7 @@
                         <a href="photos.html" class="nav__item is-transition">Photos</a>
                         <a href="look-book.html" class="nav__item is-transition">Look book</a>
                         <a href="about.html" class="nav__item is-transition hide">About</a>
-                        <div class="wg-element">
-                            <div data-w-id="b2839d15-cd17-e3c9-4a45-96f6c755104e" class="wg-element-wrapper sw1">
-                                <a lang="fr" data-w-id="b2839d15-cd17-e3c9-4a45-96f6c755104f" href="#" class="wg-selector-1 s1 w-inline-block">
-                                    <div>FR</div>
-                                    <div class="wg-selector-highlight-wrapper">
-                                        <div class="wg-selector-highlight h1"></div>
-                                    </div>
-                                </a>
-                                <a lang="en" data-w-id="b2839d15-cd17-e3c9-4a45-96f6c7551054" href="#" class="wg-selector-1 s2 w-inline-block">
-                                    <div>EN</div>
-                                    <div class="wg-selector-highlight-wrapper">
-                                        <div class="wg-selector-highlight h2"></div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="wg-code w-embed w-script">
-                                <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-                                <script>
-                                    // init Weglot
-                                    Weglot.initialize({
-                                        api_key: 'wg_62d9b9b0750831f48721322c8384946b6'
-                                    });
-                                    // on Weglot init
-                                    Weglot.on('initialized', ()=>{
-                                        // get the current active language
-                                        const currentLang = Weglot.getCurrentLang();
-                                        // if the current active language link exists
-                                        if (document.querySelector('.wg-element-wrapper.sw1 [lang=' + currentLang + ']')) {
-                                            // click the link
-                                            document.querySelector('.wg-element-wrapper.sw1 [lang=' + currentLang + ']').click();
-                                        }
-                                    }
-                                    );
-                                    // for each of the .wg-element-wrapper language links
-                                    document.querySelectorAll('.wg-element-wrapper.sw1 [lang]').forEach((link)=>{
-                                        // add a click event listener
-                                        link.addEventListener('click', function(e) {
-                                            // prevent default
-                                            e.preventDefault();
-                                            // switch current active language after a setTimeout
-                                            setTimeout(()=>Weglot.switchTo(this.getAttribute('lang')), 160);
-                                        });
-                                    }
-                                    );
-                                </script>
-                            </div>
-                        </div>
+                  </div>
                         <a href="mailto:hello@bazil.fr?subject=Prise%20de%20contact%20-%20Bazil.fr" class="cta menu w-button">hello@bazil.fr</a>
                     </div>
                     <div data-w-id="22d603c1-d2b5-51e3-3f78-2d24261fd7c3" class="nav__mobile">
